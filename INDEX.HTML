@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Style Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-scissors"></i> Glow & Style Salon
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact & Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Elevate Your Beauty & Confidence</h1>
+            <p>Experience premium hair, skin, and grooming treatments with our expert stylists.</p>
+            <a href="#contact" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Popular Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fa-solid fa-user-ninja"></i>
+                <h3>Hair Styling & Cuts</h3>
+                <p>Trendy cuts, coloring, styling, and hair care treatments for all hair types.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-spa"></i>
+                <h3>Facial & Skincare</h3>
+                <p>Refreshing facials, deep cleansing, and rejuvenating skin treatments.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-hand-sparkles"></i>
+                <h3>Manicure & Pedicure</h3>
+                <p>Nail art, spa treatments, and complete hand & feet pampering.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Glow & Style</h2>
+        <p>At Glow & Style Salon, we believe everyone deserves to look and feel their absolute best. Our team of skilled beauty experts brings years of experience using premium, eco-friendly products to give you an unforgettable salon experience.</p>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="contact">
+        <h2>Book an Appointment</h2>
+        <div class="contact-container">
+            <form id="booking-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <select id="service-select" required>
+                    <option value="">Select Service</option>
+                    <option value="Hair Cut">Hair Styling & Cut</option>
+                    <option value="Facial">Facial & Skincare</option>
+                    <option value="Nails">Manicure & Pedicure</option>
+                </select>
+                <input type="date" id="date" required>
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+            <div id="booking-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Glow & Style Salon. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
